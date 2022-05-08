@@ -1,28 +1,28 @@
 import random
 import math
 
-lower = int(input("digite um numero menor ="))
-upper = int(input("digite um numero maior ="))
+lower = int(input("Digite um numero menor ==="))
+
+upper = int(input("Digite um nmero maior ==="))
 
 x = random.randint(lower, upper)
-print("\n\tVocê só", round(math.log(upper - lower + 1 ,2)),"chance de Advinha o número !\n")
+print("\n\tVocê tem só", round(math.log(upper - lower + 1, 2)),"Chance de advinha o numero !\n")
 
 count = 0
 
-while count <math.log(upper - lower +1, 2):
-      count += 1
-      
-      advinha = int(input("Advinhe o número =")
-      
-      if x == advinha
-      print("PARANBÉNS VOCÊ CONSEGUIU ADVINHA O NUMERO" , x, "jogue novamente !")
-      
-      break
-      
-   elif x > advinha:
-      print('Você pensou pensou pequeno !!!')
-      
-   elif x < advinha
-      print('Você pensou alto !!!')
-      if count >=math.log(upper - lower +1, 2):
-       print('O número é', x , 'Tente uma outra vez !!')
+while count <math.log(upper - lower +1 , 2):
+    count += 1
+
+    advinha = int(input("Advinhe um numero: =="))
+
+    if x == advinha:
+        print('PARABENS VOCÊ CONSEGUIU DESCOBRIR O NUMERO ',x,"TENTE NOVAMENTE")
+
+        break
+    elif x > advinha:
+        print('Você pensou pequeno !!')
+    elif x < advinha:
+        print('Você pensou grande !')
+        if count >=math.log(upper - lower + 1,2):
+            print('\nO numero é ', x,"Tente uma proxima vez")
+            print('\tMelhor sorte da proxima vez!')
